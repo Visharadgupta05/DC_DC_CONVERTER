@@ -21,3 +21,59 @@ Components Used : ---
 CIRCUIT DIAGRAM :-- 
 <img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/8b6ebe27-57f1-4eb4-835d-758dc8ad0c6a" />
 
+
+
+ ## Operation
+1. MOSFET ON (Switch Closed)
+The TL494 turns the IRFZ44N MOSFET ON by applying a PWM gate pulse.
+
+Input voltage charges inductor L1, causing its current to increase and store energy.
+
+At the same time, the coupling capacitor C1 discharges through inductor L2 and the load.
+ 
+The diode is reverse-biased during this interval.
+
+Result:
+
+L1 stores energy.
+
+C1 transfers energy to the output.
+
+L2 maintains a continuous current through the load.
+
+2. MOSFET OFF (Switch Open)
+The MOSFET turns OFF.
+
+The current in inductor L1 cannot change instantly, so it flows through the diode.
+
+This current charges the coupling capacitor C1.
+
+The stored energy in L2 continues supplying current to the load.
+
+Result:
+
+L1 transfers its stored energy to C1
+	​
+L2 continues powering the load.
+
+The output voltage remains smooth due to the output capacitor.
+
+
+Duty Cycle Control
+
+The potentiometer connected to the TL494 changes the PWM duty cycle.
+
+
+For an ideal Ćuk converter,
+
+Vout = -D/(1 - D) * Vin
+	​
+where:
+
+Vout  = Output voltage
+
+Vin = Input voltage
+
+D = PWM duty cycle
+
+The negative sign indicates that the output polarity is inverted with respect to the input.
