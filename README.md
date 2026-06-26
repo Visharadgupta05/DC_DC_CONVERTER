@@ -16,3 +16,8 @@ Components Used : ---
 5. Inductors(500 uH)
 6. Potentiometer(Sliding potentiometer)
 7. Perf Board
+
+
+CIRCUIT DIAGRAM :-- 
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/8b6ebe27-57f1-4eb4-835d-758dc8ad0c6a" />
+
